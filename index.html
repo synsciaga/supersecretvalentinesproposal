@@ -136,6 +136,7 @@
     </div>
 
     <div class="message" id="message"></div>
+    <p id="ps" style="margin-top:12px;font-size:0.95rem;opacity:0.8;display:none;">(P.S try and click no)</p>
     <p id="cert" style="margin-top:18px;font-size:0.9rem;opacity:0.85;display:none;">This website and proposal were certified and backed by Paimon</p>
   </div>
 
@@ -162,8 +163,9 @@
         title.innerText = 'hi reina cutie, will you give me the honors in being your valentine';
         subtitle.innerText = 'idk how to ask so i made you this huhuhu';
         noBtn.innerText = 'No';
-                title.style.opacity = 1;
+        title.style.opacity = 1;
         subtitle.style.opacity = 1;
+        document.getElementById('ps').style.display = 'block';
       }, 200);
     }
 
@@ -198,6 +200,7 @@
       yesBtn.disabled = true;
       yesBtn.innerText = 'YAY!!';
       noBtn.style.display = 'none';
+      document.getElementById('ps').style.display = 'none';
 
       msg.style.display = 'block';
       msg.innerText = 'HOORAY!!!! lets have fun on Valentines Day gorgeouss shark whisperer reinnyyy';
